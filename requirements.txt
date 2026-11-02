@@ -1,0 +1,15 @@
+# install torch separately first (see README), then:
+sentence-transformers>=3.0
+scikit-learn
+pandas
+numpy
+pdfplumber
+python-docx
+spacy
+faiss-cpu
+fastapi
+uvicorn
+streamlit
+mlflow
+pytest
+pyyaml

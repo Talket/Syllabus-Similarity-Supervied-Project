@@ -1,0 +1,1935 @@
+{
+  "report": {
+    "title": "Optimization Techniques for Machine Learning",
+    "n_units": 6,
+    "novelty": 0.711,
+    "topics": {
+      "total": 54,
+      "covered": 3,
+      "new": 51,
+      "items": [
+        {
+          "unit": 1,
+          "topic": "Introduction to Optimization in Machine Learning",
+          "covered": true,
+          "score": 0.962,
+          "course_id": "B",
+          "course_title": "Mathematics Behind Machine Learning",
+          "match": "Optimization Techniques for Machine Learning",
+          "match_unit": 4
+        },
+        {
+          "unit": 1,
+          "topic": "Role of optimization in AI and ML",
+          "covered": false,
+          "score": 0.638,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 1,
+          "topic": "optimization problems in learning systems",
+          "covered": false,
+          "score": 0.676,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 1,
+          "topic": "loss minimization and search-based optimization",
+          "covered": false,
+          "score": 0.594,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 1,
+          "topic": "gradient-based vs gradient-free optimization",
+          "covered": false,
+          "score": 0.579,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 1,
+          "topic": "Convex vs non-convex optimization in ML",
+          "covered": false,
+          "score": 0.633,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 1,
+          "topic": "need for metaheuristic optimization",
+          "covered": false,
+          "score": 0.553,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 1,
+          "topic": "applications of optimization in feature selection",
+          "covered": false,
+          "score": 0.653,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 1,
+          "topic": "hyperparameter tuning and model selection",
+          "covered": false,
+          "score": 0.469,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 2,
+          "topic": "Evolutionary Algorithms",
+          "covered": false,
+          "score": 0.521,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 2,
+          "topic": "Fitness function",
+          "covered": false,
+          "score": 0.375,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 2,
+          "topic": "selection strategies",
+          "covered": false,
+          "score": 0.385,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 2,
+          "topic": "crossover and mutation operators",
+          "covered": false,
+          "score": 0.322,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 2,
+          "topic": "convergence behaviour",
+          "covered": false,
+          "score": 0.28,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 2,
+          "topic": "Premature convergence and diversity preservation",
+          "covered": false,
+          "score": 0.389,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 2,
+          "topic": "Fitness landscape intuition and search difficulty",
+          "covered": true,
+          "score": 0.88,
+          "course_id": "B",
+          "course_title": "Mathematics Behind Machine Learning",
+          "match": "intuition",
+          "match_unit": 6
+        },
+        {
+          "unit": 2,
+          "topic": "applications of genetic algorithms in machine learning",
+          "covered": false,
+          "score": 0.656,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 2,
+          "topic": "feature selection using genetic algorithms",
+          "covered": false,
+          "score": 0.502,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 2,
+          "topic": "Introduction to evolutionary computation",
+          "covered": false,
+          "score": 0.43,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 2,
+          "topic": "genetic algorithms representation",
+          "covered": false,
+          "score": 0.484,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 3,
+          "topic": "Swarm Intelligence Techniques",
+          "covered": false,
+          "score": 0.341,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 3,
+          "topic": "Swarm intelligence concepts",
+          "covered": false,
+          "score": 0.285,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 3,
+          "topic": "particle swarm optimization",
+          "covered": false,
+          "score": 0.517,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 3,
+          "topic": "PSO",
+          "covered": false,
+          "score": 0.305,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 3,
+          "topic": "ant colony optimization",
+          "covered": false,
+          "score": 0.485,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 3,
+          "topic": "ACO",
+          "covered": false,
+          "score": 0.295,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 3,
+          "topic": "artificial bee colony",
+          "covered": false,
+          "score": 0.24,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 3,
+          "topic": "ABC",
+          "covered": false,
+          "score": 0.252,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 3,
+          "topic": "cuckoo search algorithm",
+          "covered": false,
+          "score": 0.35,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 3,
+          "topic": "exploration vs exploitation trade-off",
+          "covered": false,
+          "score": 0.323,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 3,
+          "topic": "Parameter sensitivity and tuning in swarm algorithms",
+          "covered": false,
+          "score": 0.359,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 3,
+          "topic": "Swarm stagnation and mitigation strategies",
+          "covered": false,
+          "score": 0.182,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 3,
+          "topic": "Parallel and distributed nature of swarm optimization",
+          "covered": false,
+          "score": 0.408,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 3,
+          "topic": "swarm-based optimization for machine learning problems",
+          "covered": false,
+          "score": 0.704,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 4,
+          "topic": "Advanced Nature-Inspired Optimization",
+          "covered": false,
+          "score": 0.604,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 4,
+          "topic": "Firefly algorithm and whale optimization algorithm",
+          "covered": false,
+          "score": 0.343,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 4,
+          "topic": "grey wolf optimization and grasshopper optimization algorithm",
+          "covered": false,
+          "score": 0.412,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 4,
+          "topic": "Conceptual grouping of metaheuristics comparison of metaheuristic algorithms",
+          "covered": false,
+          "score": 0.372,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 4,
+          "topic": "scalability and convergence issues in optimization",
+          "covered": false,
+          "score": 0.543,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 5,
+          "topic": "Optimization for Machine Learning and AutoML",
+          "covered": false,
+          "score": 0.666,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 5,
+          "topic": "Hyperparameter optimization techniques",
+          "covered": false,
+          "score": 0.679,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 5,
+          "topic": "grid search vs random search limitations",
+          "covered": false,
+          "score": 0.385,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 5,
+          "topic": "evolutionary hyperparameter tuning",
+          "covered": false,
+          "score": 0.443,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 5,
+          "topic": "Bayesian optimization",
+          "covered": false,
+          "score": 0.644,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 5,
+          "topic": "conceptual",
+          "covered": false,
+          "score": 0.455,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 5,
+          "topic": "optimization for ensemble learning",
+          "covered": false,
+          "score": 0.651,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 5,
+          "topic": "introduction to automated machine learning",
+          "covered": false,
+          "score": 0.563,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 5,
+          "topic": "AutoML",
+          "covered": false,
+          "score": 0.266,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 6,
+          "topic": "Hybrid Optimization and Applications",
+          "covered": false,
+          "score": 0.596,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 6,
+          "topic": "Hybrid optimization models",
+          "covered": false,
+          "score": 0.559,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 6,
+          "topic": "combining evolutionary and swarm-based approaches",
+          "covered": false,
+          "score": 0.348,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 6,
+          "topic": "real-world case studies in optimization-based ML systems",
+          "covered": false,
+          "score": 0.749,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 6,
+          "topic": "performance evaluation of optimization techniques",
+          "covered": false,
+          "score": 0.614,
+          "course_id": "",
+          "course_title": "",
+          "match": "",
+          "match_unit": null
+        },
+        {
+          "unit": 6,
+          "topic": "computational considerations in large-scale optimization",
+          "covered": true,
+          "score": 0.787,
+          "course_id": "B",
+          "course_title": "Mathematics Behind Machine Learning",
+          "match": "Optimization considerations in large-scale ML systems",
+          "match_unit": 4
+        }
+      ]
+    },
+    "units": [
+      {
+        "order": 1,
+        "title": "Introduction to Optimization in Machine Learning",
+        "status": "covered",
+        "best_score": 0.617,
+        "best_course": "B",
+        "best_course_title": "Mathematics Behind Machine Learning",
+        "best_unit_title": "Optimization Techniques for Machine Learning"
+      },
+      {
+        "order": 2,
+        "title": "Evolutionary Algorithms",
+        "status": "NOVEL",
+        "best_score": 0.32,
+        "best_course": "B",
+        "best_course_title": "Mathematics Behind Machine Learning",
+        "best_unit_title": "Optimization Techniques for Machine Learning"
+      },
+      {
+        "order": 3,
+        "title": "Swarm Intelligence Techniques",
+        "status": "NOVEL",
+        "best_score": 0.342,
+        "best_course": "B",
+        "best_course_title": "Mathematics Behind Machine Learning",
+        "best_unit_title": "Optimization Techniques for Machine Learning"
+      },
+      {
+        "order": 4,
+        "title": "Advanced Nature-Inspired Optimization",
+        "status": "NOVEL",
+        "best_score": 0.206,
+        "best_course": "B",
+        "best_course_title": "Mathematics Behind Machine Learning",
+        "best_unit_title": "Optimization Techniques for Machine Learning"
+      },
+      {
+        "order": 5,
+        "title": "Optimization for Machine Learning and AutoML",
+        "status": "partly covered",
+        "best_score": 0.427,
+        "best_course": "B",
+        "best_course_title": "Mathematics Behind Machine Learning",
+        "best_unit_title": "Optimization Techniques for Machine Learning"
+      },
+      {
+        "order": 6,
+        "title": "Hybrid Optimization and Applications",
+        "status": "partly covered",
+        "best_score": 0.482,
+        "best_course": "B",
+        "best_course_title": "Mathematics Behind Machine Learning",
+        "best_unit_title": "Optimization Techniques for Machine Learning"
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "B",
+        "title": "Mathematics Behind Machine Learning",
+        "institution": "uploaded",
+        "coverage_new": 0.289,
+        "coverage_existing": 0.191,
+        "similarity": 0.23,
+        "topics_covered": 3,
+        "topics_total": 54,
+        "matches": [
+          {
+            "new_order": 1,
+            "new_title": "Introduction to Optimization in Machine Learning",
+            "old_order": 4,
+            "old_title": "Optimization Techniques for Machine Learning",
+            "score": 0.617,
+            "band": "strong",
+            "new_text": "Introduction to Optimization in Machine Learning: Role of optimization in AI and ML, optimization problems in learning systems, loss minimization and search-based optimization, gradient-based vs gradient-free optimization, Convex vs non-convex optimization in ML, need for metaheuristic optimization, applications of optimization in feature selection, hyperparameter tuning and model selection.",
+            "old_text": "Optimization Techniques for Machine Learning: Optimization problem formulation in ML, Convex sets and convex functions, gradients and directional derivatives, Gradient descent and variants (batch, stochastic, mini-batch), Momentum-based optimization, RMSProp and Adam, Optimization considerations in large-scale ML systems.",
+            "shared_topics": [
+              {
+                "new": "Introduction to Optimization in Machine Learning",
+                "existing": "Optimization Techniques for Machine Learning",
+                "sim": 0.962
+              }
+            ],
+            "covered_elsewhere": [],
+            "only_in_new": [
+              "Role of optimization in AI and ML",
+              "optimization problems in learning systems",
+              "loss minimization and search-based optimization",
+              "gradient-based vs gradient-free optimization",
+              "Convex vs non-convex optimization in ML",
+              "need for metaheuristic optimization",
+              "applications of optimization in feature selection",
+              "hyperparameter tuning and model selection"
+            ],
+            "only_in_existing": [
+              "Optimization problem formulation in ML",
+              "Convex sets and convex functions",
+              "gradients and directional derivatives",
+              "Gradient descent and variants",
+              "batch",
+              "stochastic",
+              "mini-batch",
+              "Momentum-based optimization",
+              "RMSProp and Adam",
+              "Optimization considerations in large-scale ML systems"
+            ]
+          },
+          {
+            "new_order": 5,
+            "new_title": "Optimization for Machine Learning and AutoML",
+            "old_order": 4,
+            "old_title": "Optimization Techniques for Machine Learning",
+            "score": 0.427,
+            "band": "partial",
+            "new_text": "Optimization for Machine Learning and AutoML: Hyperparameter optimization techniques, grid search vs random search limitations, evolutionary hyperparameter tuning, Bayesian optimization (conceptual), optimization for ensemble learning, introduction to automated machine learning (AutoML).",
+            "old_text": "Optimization Techniques for Machine Learning: Optimization problem formulation in ML, Convex sets and convex functions, gradients and directional derivatives, Gradient descent and variants (batch, stochastic, mini-batch), Momentum-based optimization, RMSProp and Adam, Optimization considerations in large-scale ML systems.",
+            "shared_topics": [],
+            "covered_elsewhere": [],
+            "only_in_new": [
+              "Optimization for Machine Learning and AutoML",
+              "Hyperparameter optimization techniques",
+              "grid search vs random search limitations",
+              "evolutionary hyperparameter tuning",
+              "Bayesian optimization",
+              "conceptual",
+              "optimization for ensemble learning",
+              "introduction to automated machine learning",
+              "AutoML"
+            ],
+            "only_in_existing": [
+              "Optimization Techniques for Machine Learning",
+              "Optimization problem formulation in ML",
+              "Convex sets and convex functions",
+              "gradients and directional derivatives",
+              "Gradient descent and variants",
+              "batch",
+              "stochastic",
+              "mini-batch",
+              "Momentum-based optimization",
+              "RMSProp and Adam",
+              "Optimization considerations in large-scale ML systems"
+            ]
+          },
+          {
+            "new_order": 6,
+            "new_title": "Hybrid Optimization and Applications",
+            "old_order": 4,
+            "old_title": "Optimization Techniques for Machine Learning",
+            "score": 0.482,
+            "band": "partial",
+            "new_text": "Hybrid Optimization and Applications: Hybrid optimization models, combining evolutionary and swarm-based approaches, real-world case studies in optimization-based ML systems, performance evaluation of optimization techniques, computational considerations in large-scale optimization.",
+            "old_text": "Optimization Techniques for Machine Learning: Optimization problem formulation in ML, Convex sets and convex functions, gradients and directional derivatives, Gradient descent and variants (batch, stochastic, mini-batch), Momentum-based optimization, RMSProp and Adam, Optimization considerations in large-scale ML systems.",
+            "shared_topics": [
+              {
+                "new": "computational considerations in large-scale optimization",
+                "existing": "Optimization considerations in large-scale ML systems",
+                "sim": 0.787
+              }
+            ],
+            "covered_elsewhere": [],
+            "only_in_new": [
+              "Hybrid Optimization and Applications",
+              "Hybrid optimization models",
+              "combining evolutionary and swarm-based approaches",
+              "real-world case studies in optimization-based ML systems",
+              "performance evaluation of optimization techniques"
+            ],
+            "only_in_existing": [
+              "Optimization Techniques for Machine Learning",
+              "Optimization problem formulation in ML",
+              "Convex sets and convex functions",
+              "gradients and directional derivatives",
+              "Gradient descent and variants",
+              "batch",
+              "stochastic",
+              "mini-batch",
+              "Momentum-based optimization",
+              "RMSProp and Adam"
+            ]
+          }
+        ],
+        "unmatched_new_units": [
+          {
+            "order": 2,
+            "title": "Evolutionary Algorithms"
+          },
+          {
+            "order": 3,
+            "title": "Swarm Intelligence Techniques"
+          },
+          {
+            "order": 4,
+            "title": "Advanced Nature-Inspired Optimization"
+          }
+        ]
+      }
+    ],
+    "calibration": {
+      "t_low": 0.38,
+      "t_high": 0.508,
+      "t_full": 0.614,
+      "t_phrase": 0.75,
+      "t_phrase_synthetic": 0.824,
+      "model": "models\\real_only_s1",
+      "phrase_model": "sentence-transformers/all-MiniLM-L6-v2",
+      "t_phrase_by_precision": {
+        "0.8": 0.824,
+        "0.85": 0.824,
+        "0.9": 0.824,
+        "0.95": 0.824
+      },
+      "n_real_pairs": 400,
+      "n_real_positive": 63,
+      "n_synthetic_pairs": 900
+    }
+  },
+  "viz": {
+    "points": [
+      {
+        "id": 0,
+        "side": "A",
+        "unit": 1,
+        "text": "Introduction to Optimization in Machine Learning",
+        "x": -0.1254,
+        "y": 0.5909,
+        "covered": true
+      },
+      {
+        "id": 1,
+        "side": "A",
+        "unit": 1,
+        "text": "Role of optimization in AI and ML",
+        "x": -0.1577,
+        "y": 0.587,
+        "covered": false
+      },
+      {
+        "id": 2,
+        "side": "A",
+        "unit": 1,
+        "text": "optimization problems in learning systems",
+        "x": -0.1409,
+        "y": 0.5035,
+        "covered": false
+      },
+      {
+        "id": 3,
+        "side": "A",
+        "unit": 1,
+        "text": "loss minimization and search-based optimization",
+        "x": -0.2105,
+        "y": 0.5905,
+        "covered": false
+      },
+      {
+        "id": 4,
+        "side": "A",
+        "unit": 1,
+        "text": "gradient-based vs gradient-free optimization",
+        "x": 0.0207,
+        "y": 0.4926,
+        "covered": false
+      },
+      {
+        "id": 5,
+        "side": "A",
+        "unit": 1,
+        "text": "Convex vs non-convex optimization in ML",
+        "x": 0.1522,
+        "y": 0.7329,
+        "covered": false
+      },
+      {
+        "id": 6,
+        "side": "A",
+        "unit": 1,
+        "text": "need for metaheuristic optimization",
+        "x": -0.9773,
+        "y": 0.1836,
+        "covered": false
+      },
+      {
+        "id": 7,
+        "side": "A",
+        "unit": 1,
+        "text": "applications of optimization in feature selection",
+        "x": -0.1225,
+        "y": 0.2907,
+        "covered": false
+      },
+      {
+        "id": 8,
+        "side": "A",
+        "unit": 1,
+        "text": "hyperparameter tuning and model selection",
+        "x": -0.1312,
+        "y": 0.329,
+        "covered": false
+      },
+      {
+        "id": 9,
+        "side": "A",
+        "unit": 2,
+        "text": "Evolutionary Algorithms",
+        "x": -0.8162,
+        "y": -0.2575,
+        "covered": false
+      },
+      {
+        "id": 10,
+        "side": "A",
+        "unit": 2,
+        "text": "Fitness function",
+        "x": -0.2406,
+        "y": -0.393,
+        "covered": false
+      },
+      {
+        "id": 11,
+        "side": "A",
+        "unit": 2,
+        "text": "selection strategies",
+        "x": -0.3801,
+        "y": -0.3073,
+        "covered": false
+      },
+      {
+        "id": 12,
+        "side": "A",
+        "unit": 2,
+        "text": "crossover and mutation operators",
+        "x": -0.301,
+        "y": -0.3244,
+        "covered": false
+      },
+      {
+        "id": 13,
+        "side": "A",
+        "unit": 2,
+        "text": "convergence behaviour",
+        "x": 0.1905,
+        "y": -0.5101,
+        "covered": false
+      },
+      {
+        "id": 14,
+        "side": "A",
+        "unit": 2,
+        "text": "Premature convergence and diversity preservation",
+        "x": 0.0309,
+        "y": -0.306,
+        "covered": false
+      },
+      {
+        "id": 15,
+        "side": "A",
+        "unit": 2,
+        "text": "Fitness landscape intuition and search difficulty",
+        "x": -0.4883,
+        "y": -0.3466,
+        "covered": true
+      },
+      {
+        "id": 16,
+        "side": "A",
+        "unit": 2,
+        "text": "applications of genetic algorithms in machine learning",
+        "x": -0.3558,
+        "y": 0.1085,
+        "covered": false
+      },
+      {
+        "id": 17,
+        "side": "A",
+        "unit": 2,
+        "text": "feature selection using genetic algorithms",
+        "x": -0.1555,
+        "y": -0.1611,
+        "covered": false
+      },
+      {
+        "id": 18,
+        "side": "A",
+        "unit": 2,
+        "text": "Introduction to evolutionary computation",
+        "x": -0.7382,
+        "y": -0.3135,
+        "covered": false
+      },
+      {
+        "id": 19,
+        "side": "A",
+        "unit": 2,
+        "text": "genetic algorithms representation",
+        "x": -0.5582,
+        "y": -0.0943,
+        "covered": false
+      },
+      {
+        "id": 20,
+        "side": "A",
+        "unit": 3,
+        "text": "Swarm Intelligence Techniques",
+        "x": -0.9208,
+        "y": -0.6091,
+        "covered": false
+      },
+      {
+        "id": 21,
+        "side": "A",
+        "unit": 3,
+        "text": "Swarm intelligence concepts",
+        "x": -0.8152,
+        "y": -0.6492,
+        "covered": false
+      },
+      {
+        "id": 22,
+        "side": "A",
+        "unit": 3,
+        "text": "particle swarm optimization",
+        "x": -0.871,
+        "y": -0.206,
+        "covered": false
+      },
+      {
+        "id": 23,
+        "side": "A",
+        "unit": 3,
+        "text": "PSO",
+        "x": 0.1679,
+        "y": -0.8117,
+        "covered": false
+      },
+      {
+        "id": 24,
+        "side": "A",
+        "unit": 3,
+        "text": "ant colony optimization",
+        "x": -0.9186,
+        "y": -0.2076,
+        "covered": false
+      },
+      {
+        "id": 25,
+        "side": "A",
+        "unit": 3,
+        "text": "ACO",
+        "x": 0.0807,
+        "y": -0.9104,
+        "covered": false
+      },
+      {
+        "id": 26,
+        "side": "A",
+        "unit": 3,
+        "text": "artificial bee colony",
+        "x": -0.6243,
+        "y": -0.7171,
+        "covered": false
+      },
+      {
+        "id": 27,
+        "side": "A",
+        "unit": 3,
+        "text": "ABC",
+        "x": 0.2548,
+        "y": -0.8757,
+        "covered": false
+      },
+      {
+        "id": 28,
+        "side": "A",
+        "unit": 3,
+        "text": "cuckoo search algorithm",
+        "x": -0.7905,
+        "y": -0.2831,
+        "covered": false
+      },
+      {
+        "id": 29,
+        "side": "A",
+        "unit": 3,
+        "text": "exploration vs exploitation trade-off",
+        "x": -0.2354,
+        "y": -0.2119,
+        "covered": false
+      },
+      {
+        "id": 30,
+        "side": "A",
+        "unit": 3,
+        "text": "Parameter sensitivity and tuning in swarm algorithms",
+        "x": -0.9701,
+        "y": -0.256,
+        "covered": false
+      },
+      {
+        "id": 31,
+        "side": "A",
+        "unit": 3,
+        "text": "Swarm stagnation and mitigation strategies",
+        "x": -0.7686,
+        "y": -0.7593,
+        "covered": false
+      },
+      {
+        "id": 32,
+        "side": "A",
+        "unit": 3,
+        "text": "Parallel and distributed nature of swarm optimization",
+        "x": -0.8168,
+        "y": -0.1815,
+        "covered": false
+      },
+      {
+        "id": 33,
+        "side": "A",
+        "unit": 3,
+        "text": "swarm-based optimization for machine learning problems",
+        "x": -0.7027,
+        "y": 0.2663,
+        "covered": false
+      },
+      {
+        "id": 34,
+        "side": "A",
+        "unit": 4,
+        "text": "Advanced Nature-Inspired Optimization",
+        "x": -0.8283,
+        "y": 0.0533,
+        "covered": false
+      },
+      {
+        "id": 35,
+        "side": "A",
+        "unit": 4,
+        "text": "Firefly algorithm and whale optimization algorithm",
+        "x": -0.7594,
+        "y": -0.2753,
+        "covered": false
+      },
+      {
+        "id": 36,
+        "side": "A",
+        "unit": 4,
+        "text": "grey wolf optimization and grasshopper optimization algorithm",
+        "x": -0.5863,
+        "y": -0.0731,
+        "covered": false
+      },
+      {
+        "id": 37,
+        "side": "A",
+        "unit": 4,
+        "text": "Conceptual grouping of metaheuristics comparison of metaheuristic algorithms",
+        "x": -0.8446,
+        "y": -0.2103,
+        "covered": false
+      },
+      {
+        "id": 38,
+        "side": "A",
+        "unit": 4,
+        "text": "scalability and convergence issues in optimization",
+        "x": -0.3203,
+        "y": 0.3953,
+        "covered": false
+      },
+      {
+        "id": 39,
+        "side": "A",
+        "unit": 5,
+        "text": "Optimization for Machine Learning and AutoML",
+        "x": -0.0032,
+        "y": 0.6246,
+        "covered": false
+      },
+      {
+        "id": 40,
+        "side": "A",
+        "unit": 5,
+        "text": "Hyperparameter optimization techniques",
+        "x": -0.3489,
+        "y": 0.6102,
+        "covered": false
+      },
+      {
+        "id": 41,
+        "side": "A",
+        "unit": 5,
+        "text": "grid search vs random search limitations",
+        "x": -0.2542,
+        "y": -0.0608,
+        "covered": false
+      },
+      {
+        "id": 42,
+        "side": "A",
+        "unit": 5,
+        "text": "evolutionary hyperparameter tuning",
+        "x": -0.6245,
+        "y": -0.0022,
+        "covered": false
+      },
+      {
+        "id": 43,
+        "side": "A",
+        "unit": 5,
+        "text": "Bayesian optimization",
+        "x": -0.2394,
+        "y": 0.4775,
+        "covered": false
+      },
+      {
+        "id": 44,
+        "side": "A",
+        "unit": 5,
+        "text": "conceptual",
+        "x": 0.3818,
+        "y": -0.7346,
+        "covered": false
+      },
+      {
+        "id": 45,
+        "side": "A",
+        "unit": 5,
+        "text": "optimization for ensemble learning",
+        "x": -0.0391,
+        "y": 0.4009,
+        "covered": false
+      },
+      {
+        "id": 46,
+        "side": "A",
+        "unit": 5,
+        "text": "introduction to automated machine learning",
+        "x": 0.1902,
+        "y": 0.1106,
+        "covered": false
+      },
+      {
+        "id": 47,
+        "side": "A",
+        "unit": 5,
+        "text": "AutoML",
+        "x": 0.2949,
+        "y": -0.3589,
+        "covered": false
+      },
+      {
+        "id": 48,
+        "side": "A",
+        "unit": 6,
+        "text": "Hybrid Optimization and Applications",
+        "x": -0.6247,
+        "y": 0.4096,
+        "covered": false
+      },
+      {
+        "id": 49,
+        "side": "A",
+        "unit": 6,
+        "text": "Hybrid optimization models",
+        "x": -0.4783,
+        "y": 0.4264,
+        "covered": false
+      },
+      {
+        "id": 50,
+        "side": "A",
+        "unit": 6,
+        "text": "combining evolutionary and swarm-based approaches",
+        "x": -1,
+        "y": -0.5305,
+        "covered": false
+      },
+      {
+        "id": 51,
+        "side": "A",
+        "unit": 6,
+        "text": "real-world case studies in optimization-based ML systems",
+        "x": -0.2471,
+        "y": 0.666,
+        "covered": false
+      },
+      {
+        "id": 52,
+        "side": "A",
+        "unit": 6,
+        "text": "performance evaluation of optimization techniques",
+        "x": -0.623,
+        "y": 0.3869,
+        "covered": false
+      },
+      {
+        "id": 53,
+        "side": "A",
+        "unit": 6,
+        "text": "computational considerations in large-scale optimization",
+        "x": -0.4511,
+        "y": 0.6321,
+        "covered": true
+      },
+      {
+        "id": 54,
+        "side": "B",
+        "unit": 1,
+        "text": "Linear Algebra Foundations for Machine Learning",
+        "x": 0.5767,
+        "y": 0.3448,
+        "covered": false
+      },
+      {
+        "id": 55,
+        "side": "B",
+        "unit": 1,
+        "text": "Vectors",
+        "x": 0.6358,
+        "y": -0.4907,
+        "covered": false
+      },
+      {
+        "id": 56,
+        "side": "B",
+        "unit": 1,
+        "text": "matrices",
+        "x": 0.6792,
+        "y": -0.588,
+        "covered": false
+      },
+      {
+        "id": 57,
+        "side": "B",
+        "unit": 1,
+        "text": "tensors in machine learning",
+        "x": 0.6405,
+        "y": 0.3676,
+        "covered": false
+      },
+      {
+        "id": 58,
+        "side": "B",
+        "unit": 1,
+        "text": "Vector spaces and subspaces",
+        "x": 0.6134,
+        "y": -0.5523,
+        "covered": false
+      },
+      {
+        "id": 59,
+        "side": "B",
+        "unit": 1,
+        "text": "Norms and projections",
+        "x": 0.7555,
+        "y": -0.1339,
+        "covered": false
+      },
+      {
+        "id": 60,
+        "side": "B",
+        "unit": 1,
+        "text": "Linear operators and transformations in ML",
+        "x": 0.7509,
+        "y": 0.2882,
+        "covered": false
+      },
+      {
+        "id": 61,
+        "side": "B",
+        "unit": 2,
+        "text": "Matrix Decompositions for Representation Learning",
+        "x": 0.8541,
+        "y": 0.094,
+        "covered": false
+      },
+      {
+        "id": 62,
+        "side": "B",
+        "unit": 2,
+        "text": "Eigen decomposition and its limitations in ML",
+        "x": 0.6126,
+        "y": 0.4066,
+        "covered": false
+      },
+      {
+        "id": 63,
+        "side": "B",
+        "unit": 2,
+        "text": "Singular value decomposition",
+        "x": 0.6636,
+        "y": 0.001,
+        "covered": false
+      },
+      {
+        "id": 64,
+        "side": "B",
+        "unit": 2,
+        "text": "SVD",
+        "x": 0.5798,
+        "y": -0.4343,
+        "covered": false
+      },
+      {
+        "id": 65,
+        "side": "B",
+        "unit": 2,
+        "text": "Principal component analysis",
+        "x": 0.745,
+        "y": -0.0957,
+        "covered": false
+      },
+      {
+        "id": 66,
+        "side": "B",
+        "unit": 2,
+        "text": "PCA",
+        "x": 0.6352,
+        "y": -0.4846,
+        "covered": false
+      },
+      {
+        "id": 67,
+        "side": "B",
+        "unit": 2,
+        "text": "from a geometric and optimization perspective",
+        "x": -0.0239,
+        "y": 0.1318,
+        "covered": false
+      },
+      {
+        "id": 68,
+        "side": "B",
+        "unit": 2,
+        "text": "Linear discriminant analysis",
+        "x": 0.8182,
+        "y": -0.0871,
+        "covered": false
+      },
+      {
+        "id": 69,
+        "side": "B",
+        "unit": 2,
+        "text": "LDA",
+        "x": 0.5568,
+        "y": -0.6598,
+        "covered": false
+      },
+      {
+        "id": 70,
+        "side": "B",
+        "unit": 2,
+        "text": "Applications of matrix factorization in recommendation systems",
+        "x": 0.6081,
+        "y": -0.0957,
+        "covered": false
+      },
+      {
+        "id": 71,
+        "side": "B",
+        "unit": 3,
+        "text": "Probability Theory and Loss Functions for Machine Learning",
+        "x": 0.4919,
+        "y": 0.5018,
+        "covered": false
+      },
+      {
+        "id": 72,
+        "side": "B",
+        "unit": 3,
+        "text": "Random variables in ML models",
+        "x": 0.533,
+        "y": 0.193,
+        "covered": false
+      },
+      {
+        "id": 73,
+        "side": "B",
+        "unit": 3,
+        "text": "Probability distributions used in learning algorithms",
+        "x": 0.2007,
+        "y": 0.1924,
+        "covered": false
+      },
+      {
+        "id": 74,
+        "side": "B",
+        "unit": 3,
+        "text": "Likelihood estimation in ML context",
+        "x": 0.4666,
+        "y": 0.3168,
+        "covered": false
+      },
+      {
+        "id": 75,
+        "side": "B",
+        "unit": 3,
+        "text": "Loss functions",
+        "x": 0.5012,
+        "y": 0.0899,
+        "covered": false
+      },
+      {
+        "id": 76,
+        "side": "B",
+        "unit": 3,
+        "text": "squared error",
+        "x": 0.4978,
+        "y": -0.1951,
+        "covered": false
+      },
+      {
+        "id": 77,
+        "side": "B",
+        "unit": 3,
+        "text": "logistic loss",
+        "x": 0.3088,
+        "y": -0.2411,
+        "covered": false
+      },
+      {
+        "id": 78,
+        "side": "B",
+        "unit": 3,
+        "text": "Bayesian interpretation of learning models",
+        "x": 0.5457,
+        "y": -0.0118,
+        "covered": false
+      },
+      {
+        "id": 79,
+        "side": "B",
+        "unit": 4,
+        "text": "Optimization Techniques for Machine Learning",
+        "x": -0.1787,
+        "y": 0.7833,
+        "covered": false
+      },
+      {
+        "id": 80,
+        "side": "B",
+        "unit": 4,
+        "text": "Optimization problem formulation in ML",
+        "x": -0.176,
+        "y": 0.8433,
+        "covered": false
+      },
+      {
+        "id": 81,
+        "side": "B",
+        "unit": 4,
+        "text": "Convex sets and convex functions",
+        "x": 0.397,
+        "y": -0.0622,
+        "covered": false
+      },
+      {
+        "id": 82,
+        "side": "B",
+        "unit": 4,
+        "text": "gradients and directional derivatives",
+        "x": 0.4105,
+        "y": -0.0057,
+        "covered": false
+      },
+      {
+        "id": 83,
+        "side": "B",
+        "unit": 4,
+        "text": "Gradient descent and variants",
+        "x": 0.0877,
+        "y": 0.4268,
+        "covered": false
+      },
+      {
+        "id": 84,
+        "side": "B",
+        "unit": 4,
+        "text": "batch",
+        "x": 0.0551,
+        "y": -0.4389,
+        "covered": false
+      },
+      {
+        "id": 85,
+        "side": "B",
+        "unit": 4,
+        "text": "stochastic",
+        "x": 0.3712,
+        "y": -0.2708,
+        "covered": false
+      },
+      {
+        "id": 86,
+        "side": "B",
+        "unit": 4,
+        "text": "mini-batch",
+        "x": -0.1114,
+        "y": -0.0728,
+        "covered": false
+      },
+      {
+        "id": 87,
+        "side": "B",
+        "unit": 4,
+        "text": "Momentum-based optimization",
+        "x": -0.2944,
+        "y": 0.4719,
+        "covered": false
+      },
+      {
+        "id": 88,
+        "side": "B",
+        "unit": 4,
+        "text": "RMSProp and Adam",
+        "x": 0.4233,
+        "y": -0.1944,
+        "covered": false
+      },
+      {
+        "id": 89,
+        "side": "B",
+        "unit": 4,
+        "text": "Optimization considerations in large-scale ML systems",
+        "x": -0.1419,
+        "y": 0.7668,
+        "covered": false
+      },
+      {
+        "id": 90,
+        "side": "B",
+        "unit": 5,
+        "text": "Mathematical Foundations of Support Vector Machines",
+        "x": 0.5573,
+        "y": 0.2136,
+        "covered": false
+      },
+      {
+        "id": 91,
+        "side": "B",
+        "unit": 5,
+        "text": "Geometric interpretation of classification margins",
+        "x": 0.6426,
+        "y": -0.172,
+        "covered": false
+      },
+      {
+        "id": 92,
+        "side": "B",
+        "unit": 5,
+        "text": "hard margin and soft margin SVM",
+        "x": 0.4947,
+        "y": 0.1091,
+        "covered": false
+      },
+      {
+        "id": 93,
+        "side": "B",
+        "unit": 5,
+        "text": "Primal and dual optimization problems",
+        "x": -0.1186,
+        "y": 0.482,
+        "covered": false
+      },
+      {
+        "id": 94,
+        "side": "B",
+        "unit": 5,
+        "text": "Lagrangian formulation",
+        "x": 0.0206,
+        "y": 0.2963,
+        "covered": false
+      },
+      {
+        "id": 95,
+        "side": "B",
+        "unit": 5,
+        "text": "Kernel trick and kernel functions",
+        "x": 0.5594,
+        "y": -0.266,
+        "covered": false
+      },
+      {
+        "id": 96,
+        "side": "B",
+        "unit": 5,
+        "text": "Optimization perspective of SVM training",
+        "x": 0.3133,
+        "y": 0.4625,
+        "covered": false
+      },
+      {
+        "id": 97,
+        "side": "B",
+        "unit": 6,
+        "text": "Regularization and Generalization Theory",
+        "x": 0.4829,
+        "y": 0.2177,
+        "covered": false
+      },
+      {
+        "id": 98,
+        "side": "B",
+        "unit": 6,
+        "text": "Bias-variance trade-off",
+        "x": 0.3086,
+        "y": -0.0508,
+        "covered": false
+      },
+      {
+        "id": 99,
+        "side": "B",
+        "unit": 6,
+        "text": "Overfitting and underfitting from a mathematical viewpoint",
+        "x": 0.3822,
+        "y": 0.1218,
+        "covered": false
+      },
+      {
+        "id": 100,
+        "side": "B",
+        "unit": 6,
+        "text": "L1 and L2 regularization",
+        "x": 0.4802,
+        "y": 0.2286,
+        "covered": false
+      },
+      {
+        "id": 101,
+        "side": "B",
+        "unit": 6,
+        "text": "Norm-based constraints",
+        "x": 0.2785,
+        "y": 0.2566,
+        "covered": false
+      },
+      {
+        "id": 102,
+        "side": "B",
+        "unit": 6,
+        "text": "Structural risk minimization",
+        "x": 0.2411,
+        "y": 0.2388,
+        "covered": false
+      },
+      {
+        "id": 103,
+        "side": "B",
+        "unit": 6,
+        "text": "VC dimension",
+        "x": 0.7426,
+        "y": -0.4539,
+        "covered": false
+      },
+      {
+        "id": 104,
+        "side": "B",
+        "unit": 6,
+        "text": "intuition",
+        "x": 0.3662,
+        "y": -0.7194,
+        "covered": false
+      }
+    ],
+    "links": [
+      {
+        "a": 0,
+        "b": 79,
+        "score": 0.962
+      },
+      {
+        "a": 15,
+        "b": 104,
+        "score": 0.88
+      },
+      {
+        "a": 53,
+        "b": 89,
+        "score": 0.787
+      }
+    ],
+    "unit_matrix": {
+      "a_titles": [
+        "Introduction to Optimization in Machine Learning",
+        "Evolutionary Algorithms",
+        "Swarm Intelligence Techniques",
+        "Advanced Nature-Inspired Optimization",
+        "Optimization for Machine Learning and AutoML",
+        "Hybrid Optimization and Applications"
+      ],
+      "b_titles": [
+        "Linear Algebra Foundations for Machine Learning",
+        "Matrix Decompositions for Representation Learning",
+        "Probability Theory and Loss Functions for Machine Learning",
+        "Optimization Techniques for Machine Learning",
+        "Mathematical Foundations of Support Vector Machines",
+        "Regularization and Generalization Theory"
+      ],
+      "sim": [
+        [
+          0.29899999499320984,
+          0.1770000010728836,
+          0.37400001287460327,
+          0.6169999837875366,
+          0.24400000274181366,
+          0.34700000286102295
+        ],
+        [
+          0.14499999582767487,
+          0.13099999725818634,
+          0.21799999475479126,
+          0.3199999928474426,
+          0.20600000023841858,
+          0.19699999690055847
+        ],
+        [
+          0.14900000393390656,
+          0.004000000189989805,
+          0.13199999928474426,
+          0.34200000762939453,
+          0.2290000021457672,
+          0.07500000298023224
+        ],
+        [
+          0.004999999888241291,
+          0.028999999165534973,
+          -0.02800000086426735,
+          0.20600000023841858,
+          0.0949999988079071,
+          0.11500000208616257
+        ],
+        [
+          0.24500000476837158,
+          0.11400000005960464,
+          0.3610000014305115,
+          0.4269999861717224,
+          0.23899999260902405,
+          0.24799999594688416
+        ],
+        [
+          0.16500000655651093,
+          0.08100000023841858,
+          0.16699999570846558,
+          0.4819999933242798,
+          0.24400000274181366,
+          0.1770000010728836
+        ]
+      ]
+    }
+  },
+  "parsed": {
+    "a": {
+      "title": "Optimization Techniques for Machine Learning",
+      "code": "CSE275",
+      "credits": 3,
+      "format": "unit",
+      "units": [
+        {
+          "order": 1,
+          "title": "Introduction to Optimization in Machine Learning",
+          "text": "Introduction to Optimization in Machine Learning: Role of optimization in AI and ML, optimization problems in learning systems, loss minimization and search-based optimization, gradient-based vs gradient-free optimization, Convex vs non-convex optimization in ML, need for metaheuristic optimization, applications of optimization in feature selection, hyperparameter tuning and model selection."
+        },
+        {
+          "order": 2,
+          "title": "Evolutionary Algorithms",
+          "text": "Evolutionary Algorithms: Fitness function, selection strategies, crossover and mutation operators, convergence behaviour, Premature convergence and diversity preservation, Fitness landscape intuition and search difficulty, applications of genetic algorithms in machine learning, feature selection using genetic algorithms, Introduction to evolutionary computation, genetic algorithms representation."
+        },
+        {
+          "order": 3,
+          "title": "Swarm Intelligence Techniques",
+          "text": "Swarm Intelligence Techniques: Swarm intelligence concepts, particle swarm optimization (PSO), ant colony optimization (ACO), artificial bee colony (ABC) and cuckoo search algorithm, exploration vs exploitation trade-off, Parameter sensitivity and tuning in swarm algorithms, Swarm stagnation and mitigation strategies, Parallel and distributed nature of swarm optimization, swarm-based optimization for machine learning problems."
+        },
+        {
+          "order": 4,
+          "title": "Advanced Nature-Inspired Optimization",
+          "text": "Advanced Nature-Inspired Optimization: Firefly algorithm and whale optimization algorithm, grey wolf optimization and grasshopper optimization algorithm, Conceptual grouping of metaheuristics comparison of metaheuristic algorithms, scalability and convergence issues in optimization."
+        },
+        {
+          "order": 5,
+          "title": "Optimization for Machine Learning and AutoML",
+          "text": "Optimization for Machine Learning and AutoML: Hyperparameter optimization techniques, grid search vs random search limitations, evolutionary hyperparameter tuning, Bayesian optimization (conceptual), optimization for ensemble learning, introduction to automated machine learning (AutoML)."
+        },
+        {
+          "order": 6,
+          "title": "Hybrid Optimization and Applications",
+          "text": "Hybrid Optimization and Applications: Hybrid optimization models, combining evolutionary and swarm-based approaches, real-world case studies in optimization-based ML systems, performance evaluation of optimization techniques, computational considerations in large-scale optimization."
+        }
+      ],
+      "outcomes": [
+        {
+          "id": "CO1",
+          "text": "Explain the role of optimization in machine learning and artificial intelligence systems."
+        },
+        {
+          "id": "CO2",
+          "text": "Apply population-based optimization techniques to solve learning and tuning problems."
+        },
+        {
+          "id": "CO3",
+          "text": "Analyze evolutionary optimization methods for feature selection and model optimization."
+        },
+        {
+          "id": "CO4",
+          "text": "Apply swarm intelligence techniques to optimization problems in AI."
+        },
+        {
+          "id": "CO5",
+          "text": "Evaluate hybrid and metaheuristic optimization strategies for machine learning models."
+        },
+        {
+          "id": "CO6",
+          "text": "Develop optimization-based solutions for real-world machine learning problems."
+        }
+      ],
+      "warnings": []
+    },
+    "b": {
+      "title": "Mathematics Behind Machine Learning",
+      "code": "INT255",
+      "credits": 3,
+      "format": "unit",
+      "units": [
+        {
+          "order": 1,
+          "title": "Linear Algebra Foundations for Machine Learning",
+          "text": "Linear Algebra Foundations for Machine Learning: Vectors, matrices, and tensors in machine learning, Vector spaces and subspaces, Norms and projections, Linear operators and transformations in ML."
+        },
+        {
+          "order": 2,
+          "title": "Matrix Decompositions for Representation Learning",
+          "text": "Matrix Decompositions for Representation Learning: Eigen decomposition and its limitations in ML, Singular value decomposition (SVD), Principal component analysis (PCA) from a geometric and optimization perspective, Linear discriminant analysis (LDA), Applications of matrix factorization in recommendation systems."
+        },
+        {
+          "order": 3,
+          "title": "Probability Theory and Loss Functions for Machine Learning",
+          "text": "Probability Theory and Loss Functions for Machine Learning: Random variables in ML models, Probability distributions used in learning algorithms, Likelihood estimation in ML context, Loss functions: squared error, logistic loss, Bayesian interpretation of learning models."
+        },
+        {
+          "order": 4,
+          "title": "Optimization Techniques for Machine Learning",
+          "text": "Optimization Techniques for Machine Learning: Optimization problem formulation in ML, Convex sets and convex functions, gradients and directional derivatives, Gradient descent and variants (batch, stochastic, mini-batch), Momentum-based optimization, RMSProp and Adam, Optimization considerations in large-scale ML systems."
+        },
+        {
+          "order": 5,
+          "title": "Mathematical Foundations of Support Vector Machines",
+          "text": "Mathematical Foundations of Support Vector Machines: Geometric interpretation of classification margins, hard margin and soft margin SVM, Primal and dual optimization problems, Lagrangian formulation, Kernel trick and kernel functions, Optimization perspective of SVM training."
+        },
+        {
+          "order": 6,
+          "title": "Regularization and Generalization Theory",
+          "text": "Regularization and Generalization Theory: Bias-variance trade-off, Overfitting and underfitting from a mathematical viewpoint, L1 and L2 regularization, Norm-based constraints, Structural risk minimization, VC dimension (intuition)."
+        }
+      ],
+      "outcomes": [
+        {
+          "id": "CO1",
+          "text": "Explain vector spaces, norms, and linear operators used in machine learning models."
+        },
+        {
+          "id": "CO2",
+          "text": "Apply matrix decompositions to perform dimensionality reduction and representation learning."
+        },
+        {
+          "id": "CO3",
+          "text": "Analyze probability-based loss functions and estimation techniques used in machine learning."
+        },
+        {
+          "id": "CO4",
+          "text": "Apply optimization techniques to train machine learning models efficiently."
+        },
+        {
+          "id": "CO5",
+          "text": "Analyze margin-based classifiers using mathematical optimization principles."
+        },
+        {
+          "id": "CO6",
+          "text": "Evaluate regularization and generalization trade-offs in machine learning models."
+        }
+      ],
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,4 @@
+,spearman,auc_unrelated_vs_rest,auc_high_vs_rest,macro_f1
+tfidf,0.266,0.789,0.466,0.45
+all-MiniLM-L6-v2,0.662,0.98,0.719,0.559
+BAAI/bge-small-en-v1.5,0.505,0.924,0.607,0.486

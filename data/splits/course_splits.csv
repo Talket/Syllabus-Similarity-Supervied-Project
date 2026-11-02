@@ -1,0 +1,91 @@
+course_id,title,institution,domain,group,split
+IITK-PHI141A,Introduction to Philosophy,Indian Institute of Technology Kanpur,Humanities,-1,test_ood
+IITM-109106059,Indian Philosophy,Indian Institute of Technology Madras (NPTEL),Humanities,-1,test_ood
+MIT-21A.100,Introduction to Anthropology,Massachusetts Institute of Technology,Humanities,-1,test_ood
+MIT-21H.001,How to Stage a Revolution,Massachusetts Institute of Technology,Humanities,-1,test_ood
+MIT-24.00,Problems of Philosophy,Massachusetts Institute of Technology,Humanities,-1,test_ood
+MIT-24.02x,Moral Problems and the Good Life,Massachusetts Institute of Technology,Humanities,-1,test_ood
+MIT-24.04J,Justice,Massachusetts Institute of Technology,Humanities,-1,test_ood
+NPTEL-109104032,Ethics,Indian Institute of Technology Kanpur (NPTEL),Humanities,-1,test_ood
+MIT-18.03SC,Differential Equations,Massachusetts Institute of Technology,Math/Stats,0,train
+MIT-2.004,Dynamics and Control II,Massachusetts Institute of Technology,Engineering,0,train
+NPTEL-108106098,Control Engineering,IIT Madras (NPTEL),Engineering,0,train
+MIT-6.251J,Introduction to Mathematical Programming,Massachusetts Institute of Technology,Math/Stats,1,train
+NPTEL-111104027,Linear Programming and Extensions,IIT Kanpur (NPTEL),Math/Stats,1,train
+MIT-14.12,Economic Applications of Game Theory,Massachusetts Institute of Technology,Business,2,val
+NPTEL-110104063,Strategy: An Introduction to Game Theory,Indian Institute of Technology Kanpur (NPTEL),Business,2,val
+UWUERZBURG-IO-INTRO,Introduction to Industrial Organization,University of Wurzburg,Business,2,val
+MIT-6.003,Signals and Systems,Massachusetts Institute of Technology,Engineering,3,train
+MIT-6.341,Discrete-Time Signal Processing,Massachusetts Institute of Technology,Engineering,3,train
+NPTEL-108106163,Signals and Systems,IISER Bhopal and IIT Mandi (NPTEL),Engineering,3,train
+NPTEL-117105134,Discrete Time Signal Processing,IIT Kharagpur (NPTEL),Engineering,3,train
+MIT-18.05,Introduction to Probability and Statistics,Massachusetts Institute of Technology,Math/Stats,4,train
+NPTEL-111102112,Statistical Inference,IIT Delhi (NPTEL),Math/Stats,4,train
+OU-M140,Introducing statistics,The Open University,Math/Stats,4,train
+MIT-6.830,Database Systems,Massachusetts Institute of Technology,CS/AI,5,train
+NPTEL-106106220,Introduction to Database Systems,IIT Madras,CS/AI,5,train
+LPU-CSE408,Design and Analysis of Algorithms,LPU,CS/AI,6,test
+MIT-6.006,Introduction to Algorithms,Massachusetts Institute of Technology,CS/AI,6,test
+MIT-6.046J,Design and Analysis of Algorithms,Massachusetts Institute of Technology,CS/AI,6,test
+NPTEL-106106131,Design and Analysis of Algorithms,Chennai Mathematical Institute,CS/AI,6,test
+NPTEL-106106226,Artificial Intelligence: Search Methods for Problem Solving,IIT Madras,CS/AI,6,test
+NPTEL-103102211,Fluid Mechanics and Its Applications,IIT Delhi (NPTEL),Engineering,7,train
+NPTEL-112105218,Advanced Fluid Mechanics,IIT Kharagpur (NPTEL),Engineering,7,train
+MIT-18.100A,Real Analysis,Massachusetts Institute of Technology,Math/Stats,8,train
+NPTEL-111106142,Real Analysis I,IIT Palakkad (NPTEL),Math/Stats,8,train
+MIT-6.034,Artificial Intelligence,Massachusetts Institute of Technology,CS/AI,9,val
+MIT-6.867,Machine Learning,Massachusetts Institute of Technology,CS/AI,9,val
+NPTEL-106106139,Introduction to Machine Learning,IIT Madras,CS/AI,9,val
+NPTEL-106106184,Deep Learning,IIT Ropar,CS/AI,9,val
+MIT-18.06,Linear Algebra,Massachusetts Institute of Technology,Math/Stats,10,train
+NPTEL-111101115,Basic Linear Algebra,IIT Bombay (NPTEL),Math/Stats,10,train
+NPTEL-111106135,Linear Algebra,Kerala School of Mathematics (NPTEL),Math/Stats,10,train
+NPTEL-101104067,Engineering Thermodynamics,IIT Kanpur (NPTEL),Engineering,11,train
+NPTEL-112102255,Thermodynamics,IIT Delhi (NPTEL),Engineering,11,train
+IITB-110101131,Financial Accounting,Indian Institute of Technology Bombay (NPTEL),Business,12,train
+MIT-15.401,Finance Theory I,Massachusetts Institute of Technology,Business,12,train
+MIT-15.511,Financial Accounting,Massachusetts Institute of Technology,Business,12,train
+IITK-110104068,Marketing Management - I,Indian Institute of Technology Kanpur (NPTEL),Business,13,train
+IITR-110107147,Introduction to Marketing Essentials,Indian Institute of Technology Roorkee (NPTEL),Business,13,train
+MIT-15.390,New Enterprises,Massachusetts Institute of Technology,Business,13,train
+MIT-15.810,Marketing Management,Massachusetts Institute of Technology,Business,13,train
+NPTEL-103106123,Applied Time-Series Analysis,Indian Institute of Technology Madras (NPTEL),Math/Stats,14,train
+NPTEL-108103158,Statistical Signal Processing,IIT Guwahati (NPTEL),Engineering,14,train
+LPU-INT395,Supervised Learning,LPU,CS/AI,15,test
+LPU-INT396,Unsupervised Learning,LPU,CS/AI,16,test
+MIT-14.73,The Challenge of World Poverty,Massachusetts Institute of Technology,Business,17,test
+MIT-14.32,Econometrics,Massachusetts Institute of Technology,Business,18,val
+NPTEL-111104072,Econometric Theory,Indian Institute of Technology Kanpur (NPTEL),Business,18,val
+IITK-110104093,Microeconomics: Theory and Applications,Indian Institute of Technology Kanpur (NPTEL),Business,19,train
+MIT-14.01,Principles of Microeconomics,Massachusetts Institute of Technology,Business,19,train
+MIT-14.04,Intermediate Microeconomic Theory,Massachusetts Institute of Technology,Business,19,train
+MIT-6.828,Operating System Engineering,Massachusetts Institute of Technology,CS/AI,20,train
+NPTEL-106102132,Operating System,IIT Delhi,CS/AI,20,train
+IITKGP-110105033,Organizational Behaviour,Indian Institute of Technology Kharagpur (NPTEL),Business,21,train
+NPTEL-106105190,Compiler Design,IIT Kharagpur,CS/AI,22,test
+MIT-2.003SC,Engineering Dynamics,Massachusetts Institute of Technology,Engineering,23,test
+IISERK-CS4101,Natural Language Processing,IISER Kolkata (NPTEL course offered via IISER Kolkata teaching plan),CS/AI,24,train
+MIT-6.857,Network and Computer Security,Massachusetts Institute of Technology,CS/AI,25,train
+NPTEL-106105162,Cryptography and Network Security,IIT Kharagpur,CS/AI,25,train
+IITK-IME602,Probability and Statistics,Indian Institute of Technology Kanpur,Math/Stats,26,train
+MIT-18.600,Probability and Random Variables,Massachusetts Institute of Technology,Math/Stats,26,train
+MIT-6.041SC,Probabilistic Systems Analysis and Applied Probability,Massachusetts Institute of Technology,Math/Stats,26,train
+NPTEL-106104148,Theory of Computation,IIT Kanpur,CS/AI,27,train
+MIT-6.042J,Mathematics for Computer Science,Massachusetts Institute of Technology,CS/AI,28,train
+MIT-6.829,Computer Networks,Massachusetts Institute of Technology,CS/AI,29,train
+NPTEL-106105183,Computer Networks and Internet Protocol,IIT Kharagpur,CS/AI,29,train
+MIT-6.0002,Introduction to Computational Thinking and Data Science,Massachusetts Institute of Technology,CS/AI,30,train
+MIT-18.04,Complex Variables with Applications,Massachusetts Institute of Technology,Math/Stats,31,train
+IITK-109104035,International Economics,Indian Institute of Technology Kanpur (NPTEL),Business,32,test
+MIT-6.045J,"Automata, Computability, and Complexity",Massachusetts Institute of Technology,CS/AI,33,train
+MIT-6.002,Circuits and Electronics,Massachusetts Institute of Technology,Engineering,34,train
+MIT-14.02,Principles of Macroeconomics,Massachusetts Institute of Technology,Business,35,test
+MIT-6.824,Distributed Computer Systems Engineering,Massachusetts Institute of Technology,CS/AI,36,val
+NPTEL-108106106,Probability Foundations for Electrical Engineers,IIT Madras (NPTEL),Math/Stats,37,val
+MIT-6.801,Machine Vision,Massachusetts Institute of Technology,CS/AI,38,train
+NPTEL-106105216,Computer Vision,IIT Kharagpur,CS/AI,38,train
+NPTEL-108103174,Computer Vision and Image Processing - Fundamentals and Applications,IIT Guwahati,CS/AI,38,train
+IITK-130104114,Microfoundations of Macroeconomics,Indian Institute of Technology Kanpur (NPTEL),Business,39,train
+MIT-6.0001,Introduction to Computer Science and Programming in Python,Massachusetts Institute of Technology,CS/AI,40,train
+NPTEL-106106145,"Programming, Data Structures and Algorithms using Python",Chennai Mathematical Institute,CS/AI,40,train
+NPTEL-106106143,Reinforcement Learning,IIT Madras,CS/AI,41,val
