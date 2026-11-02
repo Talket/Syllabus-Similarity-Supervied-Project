@@ -134,18 +134,15 @@ export const DualDropzone: React.FC<DualDropzoneProps> = ({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (mode === 'pair') {
-      if (fileA && fileB) {
-        onComparePair(fileA, fileB);
-      }
-    } else {
-      if (fileA) {
-        onCompareLibrary(fileA);
-      }
+    if (mode === 'pair' && fileA && fileB) {
+      onComparePair(fileA, fileB);
+    } else if (fileA) {
+      onCompareLibrary(fileA);
     }
   };
 
-  const canSubmit = mode === 'pair' ? Boolean(fileA && fileB) : Boolean(fileA);
+  const isSinglePdf = Boolean(fileA && !fileB) || mode === 'library';
+  const canSubmit = Boolean(fileA);
 
   return (
     <div className="dropzone-modal-backdrop" role="dialog" aria-modal="true" aria-label="Upload Syllabi">
@@ -346,7 +343,13 @@ export const DualDropzone: React.FC<DualDropzoneProps> = ({
                 className="dropzone-submit-btn num cursor-pointer"
                 disabled={!canSubmit || isProcessing}
               >
-                <span>{isProcessing ? 'Initializing Model...' : 'Launch Semantic Comparison'}</span>
+                <span>
+                  {isProcessing
+                    ? 'Initializing Model...'
+                    : isSinglePdf
+                    ? 'Analyze Single Syllabus (vs Benchmark Topics)'
+                    : 'Launch Semantic Pair Comparison'}
+                </span>
                 <span className="btn-arrow">→</span>
               </button>
             </div>

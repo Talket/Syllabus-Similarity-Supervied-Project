@@ -4130,6 +4130,77 @@ textarea:focus-visible {
   border: 1px solid rgba(139, 124, 255, 0.35);
 }
 
+/* --- TOPICS KNOWLEDGE BASE BOARD (SINGLE PDF MODE) --- */
+.stage-sheet-b.is-topics-board {
+  border: 1px solid rgba(139, 124, 255, 0.45);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.85), 0 0 35px rgba(139, 124, 255, 0.2);
+  color: #f1f0f7;
+}
+
+.stage-sheet-b.is-topics-board .sheet-paper-bg {
+  background: radial-gradient(circle at 80% 20%, rgba(28, 22, 50, 0.98), rgba(10, 10, 18, 0.99));
+  border: 1px solid rgba(139, 124, 255, 0.35);
+  box-shadow: inset 0 0 40px rgba(139, 124, 255, 0.08);
+}
+
+.stage-sheet-b.is-topics-board .sheet-paper-sheen {
+  display: none;
+}
+
+.stage-sheet-b.is-topics-board .sheet-badge-topics {
+  background: rgba(139, 124, 255, 0.22);
+  color: #c4b5fd;
+  border: 1px solid rgba(139, 124, 255, 0.5);
+  letter-spacing: 0.06em;
+}
+
+.stage-sheet-b.is-topics-board .sheet-title {
+  color: #f8fafc;
+  letter-spacing: -0.01em;
+}
+
+.stage-sheet-b.is-topics-board .topics-board-meta {
+  font-size: 0.68rem;
+  color: #a5b4fc;
+  letter-spacing: 0.04em;
+  margin-top: -0.2rem;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.stage-sheet-b.is-topics-board .sheet-divider {
+  background: linear-gradient(90deg, rgba(139, 124, 255, 0.6), transparent);
+}
+
+.stage-sheet-b.is-topics-board .stage-unit-strip-b {
+  background: rgba(24, 18, 42, 0.75);
+  border-bottom: 1px solid rgba(139, 124, 255, 0.18);
+  border-left: 3px solid #8b7cff;
+  border-radius: 4px;
+  padding: 0.3rem 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.stage-sheet-b.is-topics-board .unit-strip-header .unit-order {
+  color: #c4b5fd;
+  font-weight: 700;
+}
+
+.stage-sheet-b.is-topics-board .unit-strip-header .unit-title {
+  color: #f1f5f9;
+}
+
+.stage-sheet-b.is-topics-board .unit-body-text {
+  color: #94a3b8;
+  font-size: 0.72rem;
+}
+
+.stage-sheet-b.is-topics-board .sheet-footer {
+  border-top: 1px solid rgba(139, 124, 255, 0.25);
+  color: #a5b4fc;
+}
+
 .sheet-units-stack {
   display: flex;
   flex-direction: column;

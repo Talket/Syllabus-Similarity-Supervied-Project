@@ -326,13 +326,12 @@ export const App: React.FC = () => {
   };
 
   const handleFinishAnimation = () => {
+    const dashboardEl = document.getElementById('results-dashboard');
+    if (dashboardEl) {
+      const targetTop = dashboardEl.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: targetTop, behavior: 'instant' });
+    }
     setOrchestratorMode('scroll');
-    setTimeout(() => {
-      const dashboardEl = document.getElementById('results-dashboard');
-      if (dashboardEl) {
-        dashboardEl.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
   };
 
   if (!data) {
@@ -396,6 +395,7 @@ export const App: React.FC = () => {
             data={data}
             mode={orchestratorMode}
             isDataReady={isDataReady}
+            isLibraryMode={isLibraryMode}
             onOpenUpload={() => setIsUploadOpen(true)}
             onFinishAnimation={handleFinishAnimation}
             onExitPresenter={() => {

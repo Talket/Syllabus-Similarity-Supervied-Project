@@ -38,6 +38,7 @@ export interface StageProps {
   debugScene?: number | null;
   debugProgress?: number;
   tuneSettings?: TuneSettings;
+  isLibraryMode?: boolean;
 }
 
 export const Stage: React.FC<StageProps> = ({
@@ -50,6 +51,7 @@ export const Stage: React.FC<StageProps> = ({
   debugScene,
   debugProgress,
   tuneSettings,
+  isLibraryMode = false,
 }) => {
   const trackRef = useRef<HTMLDivElement>(null);
   const viewportRef = useRef<HTMLDivElement>(null);
@@ -350,7 +352,8 @@ export const Stage: React.FC<StageProps> = ({
     }
     const dashboard = document.getElementById('results-dashboard');
     if (dashboard) {
-      dashboard.scrollIntoView({ behavior: 'smooth' });
+      const targetTop = dashboard.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: targetTop, behavior: 'instant' });
     }
     onFinishAnimation?.();
   };
@@ -441,7 +444,9 @@ export const Stage: React.FC<StageProps> = ({
                 </div>
 
                 <div className="sheet-header">
-                  <span className="sheet-badge num">SYLLABUS A · PROPOSAL</span>
+                  <span className="sheet-badge num">
+                    {isLibraryMode ? 'UPLOADED SYLLABUS · PROPOSAL' : 'SYLLABUS A · PROPOSAL'}
+                  </span>
                   <span className="sheet-code num">{data.parsed.a?.code || 'NPTEL_INT395'}</span>
                 </div>
 
@@ -515,21 +520,35 @@ export const Stage: React.FC<StageProps> = ({
               </div>
             </div>
 
-            {/* --- PERSISTENT SHEET B (Comparison Document) --- */}
+            {/* --- PERSISTENT SHEET B (Comparison Document OR Topic Matrix) --- */}
             <div className="stage-sheet-ambient-bob">
-              <div className="stage-sheet stage-sheet-b" ref={sheetBRef}>
+              <div
+                className={`stage-sheet stage-sheet-b ${isLibraryMode ? 'is-topics-board' : ''}`}
+                ref={sheetBRef}
+              >
                 <div className="sheet-paper-bg" ref={sheetBBgRef} />
                 <div className="sheet-paper-sheen" aria-hidden="true" />
 
                 <div className="sheet-header">
-                  <span className="sheet-badge sheet-badge-b num">SYLLABUS B · COMPARISON</span>
-                  {data.parsed.b?.code && <span className="sheet-code num">{data.parsed.b.code}</span>}
+                  <span className={`sheet-badge ${isLibraryMode ? 'sheet-badge-topics' : 'sheet-badge-b'} num`}>
+                    {isLibraryMode ? 'REFERENCE TOPICS · KNOWLEDGE BASE' : 'SYLLABUS B · COMPARISON'}
+                  </span>
+                  <span className="sheet-code num">
+                    {isLibraryMode ? '90 COURSES BENCHMARK' : (data.parsed.b?.code || '')}
+                  </span>
                 </div>
 
-                <h2 className="sheet-title">{data.parsed.b?.title || 'Reference Syllabus'}</h2>
+                <h2 className="sheet-title">
+                  {isLibraryMode ? 'Curriculum Reference Topics' : (data.parsed.b?.title || 'Reference Syllabus')}
+                </h2>
+                {isLibraryMode && (
+                  <p className="topics-board-meta num">
+                    Semantic benchmark clusters across academic curriculum corpus
+                  </p>
+                )}
                 <div className="sheet-divider" />
 
-                {/* The persistent Unit Strips of Document B */}
+                {/* The persistent Unit Strips / Topic Clusters of Document B */}
                 <div className="sheet-units-stack">
                   {unitsB.map((unit, uIdx) => {
                     const unitTopicsB = topicsBByUnit[unit.order] || [];
@@ -542,7 +561,9 @@ export const Stage: React.FC<StageProps> = ({
                         ref={(el) => (unitStripsBRef.current[uIdx] = el)}
                       >
                         <div className="unit-strip-header">
-                          <span className="unit-order num">Unit 0{unit.order}</span>
+                          <span className="unit-order num">
+                            {isLibraryMode ? `Cluster 0${unit.order}` : `Unit 0${unit.order}`}
+                          </span>
                           <h4 className="unit-title">{unit.title}</h4>
                         </div>
 
@@ -550,7 +571,9 @@ export const Stage: React.FC<StageProps> = ({
                           className="unit-body-text"
                           ref={(el) => (unitBodyBRef.current[uIdx] = el)}
                         >
-                          {unit.text.slice(0, 90)}...
+                          {isLibraryMode
+                            ? `Indexed: ${unitTopicsB.map((pt) => pt.text).slice(0, 3).join(' • ')}`
+                            : `${unit.text.slice(0, 90)}...`}
                         </p>
 
                         <div
@@ -570,7 +593,9 @@ export const Stage: React.FC<StageProps> = ({
                                   if (chipGlobalIdx !== -1) chipsRef.current[chipGlobalIdx] = el;
                                 }}
                               >
-                                <span className="chip-unit num">U{pt.unit}</span>
+                                <span className="chip-unit num">
+                                  {isLibraryMode ? `C${pt.unit}` : `U${pt.unit}`}
+                                </span>
                                 <span className="chip-label">{pt.text}</span>
                               </div>
                             );
@@ -587,8 +612,16 @@ export const Stage: React.FC<StageProps> = ({
                 </div>
 
                 <div className="sheet-footer num">
-                  <span>{unitsB.length} UNITS DETECTED</span>
-                  <span>FORMAT: {data.parsed.b?.format?.toUpperCase() || 'UNIT'}</span>
+                  <span>
+                    {isLibraryMode
+                      ? `${allTopicChips.filter((c) => c.side === 'B').length || unitsB.length * 4} BENCHMARK TOPICS`
+                      : `${unitsB.length} UNITS DETECTED`}
+                  </span>
+                  <span>
+                    {isLibraryMode
+                      ? 'CORPUS: CS / AI CURRICULUM'
+                      : `FORMAT: ${data.parsed.b?.format?.toUpperCase() || 'UNIT'}`}
+                  </span>
                 </div>
               </div>
             </div>
