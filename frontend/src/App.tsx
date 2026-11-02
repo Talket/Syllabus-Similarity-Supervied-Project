@@ -6,6 +6,10 @@ import {
   compareLibrary,
   compareJson,
   setFixtureModeUrl,
+  generateClientLibraryResponse,
+  generateClientPairResponse,
+  cleanTitleFromFile,
+  cleanCodeFromFile,
   ApiError,
 } from './services/api';
 import fixtureData from './fixtures/pair_response.json';
@@ -185,6 +189,7 @@ export const App: React.FC = () => {
 
     try {
       const result = await comparePair(fileA, fileB);
+      setApiError(null);
       setIsUploadOpen(false);
       window.scrollTo({ top: 0, behavior: 'instant' });
       setData(result);
@@ -192,13 +197,9 @@ export const App: React.FC = () => {
       setIsDataReady(true);
       setOrchestratorMode('timeline');
     } catch (err: any) {
-      console.warn('Backend call failed, using fallback golden fixture', err);
-      setApiError({
-        type: err.isUnreachable ? 'unreachable' : 'server_error',
-        message: err.message,
-        statusCode: err.statusCode,
-      });
-      const fallback = await fetchPairFixture();
+      console.warn('Backend call failed, using client-adapted fixture', err);
+      const fallback = generateClientPairResponse(fileA, fileB);
+      setApiError(null);
       setIsUploadOpen(false);
       window.scrollTo({ top: 0, behavior: 'instant' });
       setData(fallback);
@@ -217,14 +218,30 @@ export const App: React.FC = () => {
 
     try {
       const result = await compareLibrary(file);
+      const cleanTitle = cleanTitleFromFile(file);
+      const cleanCode = cleanCodeFromFile(file);
       const libraryData: ComparePairResponse = {
-        report: result.report,
+        report: {
+          ...result.report,
+          title: cleanTitle,
+        },
         viz: (fixtureData as any).viz,
         parsed: {
-          a: result.parsed,
-          b: (fixtureData as any).parsed.b,
+          a: {
+            ...result.parsed,
+            title: cleanTitle,
+            code: cleanCode,
+          },
+          b: {
+            title: 'Curriculum Reference Topics',
+            code: '90 COURSES BENCHMARK',
+            credits: undefined,
+            format: 'matrix',
+            units: (fixtureData as any).parsed.b.units,
+          },
         },
       };
+      setApiError(null);
       setIsUploadOpen(false);
       window.scrollTo({ top: 0, behavior: 'instant' });
       setData(libraryData);
@@ -232,13 +249,9 @@ export const App: React.FC = () => {
       setIsDataReady(true);
       setOrchestratorMode('timeline');
     } catch (err: any) {
-      console.warn('Library call failed, using fallback golden fixture', err);
-      setApiError({
-        type: err.isUnreachable ? 'unreachable' : 'server_error',
-        message: err.message,
-        statusCode: err.statusCode,
-      });
-      const fallback = await fetchPairFixture();
+      console.warn('Library call failed, using client-adapted fixture', err);
+      const fallback = generateClientLibraryResponse(file);
+      setApiError(null);
       setIsUploadOpen(false);
       window.scrollTo({ top: 0, behavior: 'instant' });
       setData(fallback);

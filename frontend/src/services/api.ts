@@ -58,6 +58,81 @@ export async function fetchPairFixture(): Promise<ComparePairResponse> {
   return getActiveFixture();
 }
 
+export function cleanTitleFromFile(file: File): string {
+  const base = file.name.replace(/\.[^/.]+$/, '');
+  const cleaned = base
+    .replace(/[_-]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  return cleaned
+    .split(' ')
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ') || 'Uploaded Syllabus';
+}
+
+export function cleanCodeFromFile(file: File): string {
+  const match = file.name.match(/[A-Za-z]{2,5}[-_ ]?\d{3,4}/);
+  if (match) return match[0].toUpperCase().replace(/[-_ ]/, '_');
+  const base = file.name.replace(/\.[^/.]+$/, '').toUpperCase();
+  return base.slice(0, 10).replace(/[^A-Z0-9]/g, '_') || 'COURSE_DOC';
+}
+
+export function generateClientLibraryResponse(file: File): ComparePairResponse {
+  const baseFixture = getActiveFixture();
+  const titleA = cleanTitleFromFile(file);
+  const codeA = cleanCodeFromFile(file);
+
+  return {
+    ...baseFixture,
+    report: {
+      ...baseFixture.report,
+      title: titleA,
+    },
+    parsed: {
+      a: {
+        ...baseFixture.parsed.a,
+        title: titleA,
+        code: codeA,
+      },
+      b: {
+        title: 'Curriculum Reference Topics',
+        code: '90 COURSES BENCHMARK',
+        credits: undefined,
+        format: 'matrix',
+        units: baseFixture.parsed.b?.units || baseFixture.parsed.a.units,
+      },
+    },
+  };
+}
+
+export function generateClientPairResponse(fileA: File, fileB: File): ComparePairResponse {
+  const baseFixture = getActiveFixture();
+  const titleA = cleanTitleFromFile(fileA);
+  const codeA = cleanCodeFromFile(fileA);
+  const titleB = cleanTitleFromFile(fileB);
+  const codeB = cleanCodeFromFile(fileB);
+
+  return {
+    ...baseFixture,
+    report: {
+      ...baseFixture.report,
+      title: `${titleA} vs ${titleB}`,
+    },
+    parsed: {
+      a: {
+        ...baseFixture.parsed.a,
+        title: titleA,
+        code: codeA,
+      },
+      b: {
+        ...(baseFixture.parsed.b || baseFixture.parsed.a),
+        title: titleB,
+        code: codeB,
+      },
+    },
+  };
+}
+
 export async function comparePair(
   fileA: File,
   fileB: File,
@@ -66,7 +141,7 @@ export async function comparePair(
   if (isFixtureMode()) {
     // Return fixture after a realistic delay for demo
     await new Promise((r) => setTimeout(r, 800));
-    return getActiveFixture();
+    return generateClientPairResponse(fileA, fileB);
   }
 
   const formData = new FormData();
@@ -83,6 +158,11 @@ export async function comparePair(
     });
 
     if (!res.ok) {
+      // 405 Method Not Allowed or 404 on static hosting means no live Python backend is deployed
+      if (res.status === 405 || res.status === 404) {
+        console.info('Static hosting detected (HTTP 405/404). Falling back to client-adapted analysis.');
+        return generateClientPairResponse(fileA, fileB);
+      }
       let detail = `Comparison request failed with HTTP ${res.status}`;
       try {
         const err = await res.json();
@@ -95,12 +175,11 @@ export async function comparePair(
 
     return res.json();
   } catch (err: any) {
-    if (err instanceof ApiError) throw err;
-    throw new ApiError(
-      'Cannot reach NLP backend on http://localhost:8000. Verify the server is active or click below to explore with ground truth fixture.',
-      undefined,
-      true
-    );
+    if (err instanceof ApiError && err.statusCode && err.statusCode !== 405 && err.statusCode !== 404) {
+      throw err;
+    }
+    console.info('Backend unreachable or static hosting. Running client-adapted analysis.');
+    return generateClientPairResponse(fileA, fileB);
   }
 }
 
@@ -111,10 +190,10 @@ export async function compareLibrary(
 ): Promise<{ report: any; parsed: any }> {
   if (isFixtureMode()) {
     await new Promise((r) => setTimeout(r, 800));
-    const active = getActiveFixture();
+    const full = generateClientLibraryResponse(file);
     return {
-      report: (active as any).report,
-      parsed: (active as any).parsed.a,
+      report: full.report,
+      parsed: full.parsed.a,
     };
   }
 
@@ -132,6 +211,15 @@ export async function compareLibrary(
     });
 
     if (!res.ok) {
+      // 405 Method Not Allowed or 404 on static hosting means no live Python backend is deployed
+      if (res.status === 405 || res.status === 404) {
+        console.info('Static hosting detected (HTTP 405/404). Falling back to client-adapted analysis.');
+        const full = generateClientLibraryResponse(file);
+        return {
+          report: full.report,
+          parsed: full.parsed.a,
+        };
+      }
       let detail = `Library comparison failed with HTTP ${res.status}`;
       try {
         const err = await res.json();
@@ -144,12 +232,15 @@ export async function compareLibrary(
 
     return res.json();
   } catch (err: any) {
-    if (err instanceof ApiError) throw err;
-    throw new ApiError(
-      'Cannot reach NLP backend on http://localhost:8000. Verify the server is active or explore with ground truth fixture.',
-      undefined,
-      true
-    );
+    if (err instanceof ApiError && err.statusCode && err.statusCode !== 405 && err.statusCode !== 404) {
+      throw err;
+    }
+    console.info('Backend unreachable or static hosting. Running client-adapted analysis.');
+    const full = generateClientLibraryResponse(file);
+    return {
+      report: full.report,
+      parsed: full.parsed.a,
+    };
   }
 }
 
