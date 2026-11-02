@@ -12,6 +12,7 @@ import {
   cleanCodeFromFile,
   ApiError,
 } from './services/api';
+import { buildDynamicReportFromFile } from './services/clientParser';
 import fixtureData from './fixtures/pair_response.json';
 import { useLenis } from './hooks/useLenis';
 import { CustomCursor } from './components/common/CustomCursor';
@@ -197,8 +198,8 @@ export const App: React.FC = () => {
       setIsDataReady(true);
       setOrchestratorMode('timeline');
     } catch (err: any) {
-      console.warn('Backend call failed, using client-adapted fixture', err);
-      const fallback = generateClientPairResponse(fileA, fileB);
+      console.warn('Pair comparison failed, using dynamic client parser', err);
+      const fallback = await buildDynamicReportFromFile(fileA, fileB);
       setApiError(null);
       setIsUploadOpen(false);
       window.scrollTo({ top: 0, behavior: 'instant' });
@@ -218,20 +219,11 @@ export const App: React.FC = () => {
 
     try {
       const result = await compareLibrary(file);
-      const cleanTitle = cleanTitleFromFile(file);
-      const cleanCode = cleanCodeFromFile(file);
       const libraryData: ComparePairResponse = {
-        report: {
-          ...result.report,
-          title: cleanTitle,
-        },
-        viz: (fixtureData as any).viz,
+        report: result.report,
+        viz: result.viz || (fixtureData as any).viz,
         parsed: {
-          a: {
-            ...result.parsed,
-            title: cleanTitle,
-            code: cleanCode,
-          },
+          a: result.parsed,
           b: {
             title: 'Curriculum Reference Topics',
             code: '90 COURSES BENCHMARK',
@@ -249,8 +241,8 @@ export const App: React.FC = () => {
       setIsDataReady(true);
       setOrchestratorMode('timeline');
     } catch (err: any) {
-      console.warn('Library call failed, using client-adapted fixture', err);
-      const fallback = generateClientLibraryResponse(file);
+      console.warn('Library call failed, using dynamic client parser', err);
+      const fallback = await buildDynamicReportFromFile(file);
       setApiError(null);
       setIsUploadOpen(false);
       window.scrollTo({ top: 0, behavior: 'instant' });

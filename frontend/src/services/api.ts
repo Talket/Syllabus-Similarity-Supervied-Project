@@ -1,6 +1,7 @@
 import { ComparePairResponse, LibraryCourse } from '../types/api';
 import pairFixtureData from '../fixtures/pair_response.json';
 import landingFixtureData from '../fixtures/landing_response.json';
+import { buildDynamicReportFromFile } from './clientParser';
 
 const API_BASE = import.meta.env.VITE_API || '';
 
@@ -160,8 +161,8 @@ export async function comparePair(
     if (!res.ok) {
       // 405 Method Not Allowed or 404 on static hosting means no live Python backend is deployed
       if (res.status === 405 || res.status === 404) {
-        console.info('Static hosting detected (HTTP 405/404). Falling back to client-adapted analysis.');
-        return generateClientPairResponse(fileA, fileB);
+        console.info('Static hosting detected (HTTP 405/404). Running dynamic client syllabus parser.');
+        return await buildDynamicReportFromFile(fileA, fileB);
       }
       let detail = `Comparison request failed with HTTP ${res.status}`;
       try {
@@ -178,8 +179,8 @@ export async function comparePair(
     if (err instanceof ApiError && err.statusCode && err.statusCode !== 405 && err.statusCode !== 404) {
       throw err;
     }
-    console.info('Backend unreachable or static hosting. Running client-adapted analysis.');
-    return generateClientPairResponse(fileA, fileB);
+    console.info('Backend unreachable or static hosting. Running dynamic client syllabus parser.');
+    return await buildDynamicReportFromFile(fileA, fileB);
   }
 }
 
@@ -187,13 +188,14 @@ export async function compareLibrary(
   file: File,
   topK: number = 3,
   tPhrase?: number
-): Promise<{ report: any; parsed: any }> {
+): Promise<{ report: any; parsed: any; viz?: any }> {
   if (isFixtureMode()) {
     await new Promise((r) => setTimeout(r, 800));
-    const full = generateClientLibraryResponse(file);
+    const full = await buildDynamicReportFromFile(file);
     return {
       report: full.report,
       parsed: full.parsed.a,
+      viz: full.viz,
     };
   }
 
@@ -213,11 +215,12 @@ export async function compareLibrary(
     if (!res.ok) {
       // 405 Method Not Allowed or 404 on static hosting means no live Python backend is deployed
       if (res.status === 405 || res.status === 404) {
-        console.info('Static hosting detected (HTTP 405/404). Falling back to client-adapted analysis.');
-        const full = generateClientLibraryResponse(file);
+        console.info('Static hosting detected (HTTP 405/404). Running dynamic client syllabus parser.');
+        const full = await buildDynamicReportFromFile(file);
         return {
           report: full.report,
           parsed: full.parsed.a,
+          viz: full.viz,
         };
       }
       let detail = `Library comparison failed with HTTP ${res.status}`;
@@ -235,11 +238,12 @@ export async function compareLibrary(
     if (err instanceof ApiError && err.statusCode && err.statusCode !== 405 && err.statusCode !== 404) {
       throw err;
     }
-    console.info('Backend unreachable or static hosting. Running client-adapted analysis.');
-    const full = generateClientLibraryResponse(file);
+    console.info('Backend unreachable or static hosting. Running dynamic client syllabus parser.');
+    const full = await buildDynamicReportFromFile(file);
     return {
       report: full.report,
       parsed: full.parsed.a,
+      viz: full.viz,
     };
   }
 }
